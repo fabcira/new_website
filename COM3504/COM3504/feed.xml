@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:375CB449-73F1-4CEC-846C-5936632FE5DA</id>
+ <title>Page list Atom feed</title>
+ <updated>2013-03-01T10:11:15+00:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:9A360B2D-4F63-46C0-8435-227B9496E56B</id>
+  <title>Home</title>
+  <title xmlns="urn:iweb:">Home</title>
+  <in-navbar xmlns="urn:iweb:">9A360B2D-4F63-46C0-8435-227B9496E56B</in-navbar>
+  <link rel="alternate" href="Home.html"/>
+  <updated>2013-03-01T10:11:15.001+00:00</updated>
+  <content>Home</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:404778B7-1E2C-4528-AD70-82AE093C8F04</id>
+  <title>Programme</title>
+  <title xmlns="urn:iweb:">Programme</title>
+  <in-navbar xmlns="urn:iweb:">404778B7-1E2C-4528-AD70-82AE093C8F04</in-navbar>
+  <link rel="alternate" href="Programme.html"/>
+  <updated>2013-03-01T10:11:15.002+00:00</updated>
+  <content>Programme</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:99D52D3D-BDB6-40A6-B849-FF18D10008D3</id>
+  <title>Assignment FAQs</title>
+  <title xmlns="urn:iweb:">Assignment FAQs</title>
+  <in-navbar xmlns="urn:iweb:">99D52D3D-BDB6-40A6-B849-FF18D10008D3</in-navbar>
+  <link rel="alternate" href="Assignment_FAQs.html"/>
+  <updated>2013-03-01T10:11:15.003+00:00</updated>
+  <content>Assignment FAQs</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:F63284CC-CCA9-4819-89E2-C868853A5251</id>
+  <title>Blog</title>
+  <title xmlns="urn:iweb:">Blog</title>
+  <in-navbar xmlns="urn:iweb:">F63284CC-CCA9-4819-89E2-C868853A5251</in-navbar>
+  <link rel="alternate" href="Blog/Blog.html"/>
+  <updated>2007-01-23T17:29:52+00:00</updated>
+  <content>Blog</content>
+ </entry>
+</feed>

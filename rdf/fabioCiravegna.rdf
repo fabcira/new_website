@@ -1,0 +1,54 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+	<foaf:name>Fabio Ciravegna</foaf:name>
+	<foaf:title>Professor</foaf:title>
+	<foaf:givenname>Fabio</foaf:givenname>
+	<foaf:family_name>Ciravegna</foaf:family_name>
+	<foaf:mbox_sha1sum>1581bc8c10464ef1f4b317119f5706b1fedaf77f</foaf:mbox_sha1sum>
+	<foaf:homepage rdf:resource="http://www.dcs.shef.ac.uk/~fabio/"/>
+	<foaf:depiction rdf:resource="http://www.dcs.shef.ac.uk/~fabio/Fabio_Ciravegna/Home_files/shapeimage_3.png"/>
+	<foaf:phone rdf:resource="tel:00441142221940"/>
+	<foaf:workplaceHomepage rdf:resource="http://www.shef.ac.uk/dcs/"/>
+	<foaf:workInfoHomepage rdf:resource="http://www.dcs.shef.ac.uk/~fabio/Fabio_Ciravegna/Research.html"/>
+
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Sam Chapman</foaf:name>
+	<foaf:mbox_sha1sum>d27fe797ef10f0b3f39a8b4c94ed8484961fba5f</foaf:mbox_sha1sum></foaf:Person>
+	</foaf:knows>
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Steffen Staab </foaf:name>
+<foaf:mbox_sha1sum>ae8f32f31b69df2872d4c5d2e3bf21cf09cadf90</foaf:mbox_sha1sum>
+		</foaf:Person>
+	</foaf:knows>
+	<foaf:knows>
+		<foaf:Person>
+			<foaf:name>Matthew Rowe</foaf:name>
+<foaf:mbox_sha1sum>bd2cda94c756832460fd7c8f6de5c3d2525bbdba</foaf:mbox_sha1sum>
+		</foaf:Person>
+
+	</foaf:knows>
+
+	<foaf:currentProject> 
+		http://nlp.shef.ac.uk/wig/rdf/doap/x-media.rdf>
+	</foaf:currentProject> 
+	
+	<foaf:pastProject> http://nlp.shef.ac.uk/wig/rdf/doap/abraxas.rdf
+	</foaf:pastProject> 
+
+</foaf:Person>
+
+
+
+</rdf:RDF>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--inspired from http://universimmedia.pagesperso-orange.fr/geo/loc.htm-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Location</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyDRjsAupVw6hqUhhPPv95i2efr9H8fiNoM"-->
+    <!--type="text/javascript"></script>-->
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAgrj58PbXr2YriiRDqbnL1RSqrCjdkglBijPNIIYrqkVvD1R4QxRl47Yh2D_0C1l5KXQJGrbkSDvXFA"
+            type="text/javascript"></script>
+
+    <script src="js/common_functions.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/map_functions.js" type="text/javascript"></script>
+    <script src="js/upload_data.js" type="text/javascript"></script>
+
+
+    <script language="JavaScript" src="js/clientsideInclude.js"></script>
+
+
+</head>
+
+
+<body onload="load()" onunload="GUnload()">
+
+
+<!--// here we will load the left panel-->
+<div id="topPanel"></div>
+<script>clientSideInclude('topPanel', 'topPanel.html')</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <script>
+                var currentIndex = getParameterByName('index');
+                var currentString;
+                var nextType;
+                var currentFile;
+                buildLeftPanel();
+            </script>
+
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <script>
+                document.write('<h1 class="page-header">' + currentString + '</h1>');
+
+                var action='thankyou.html';
+                if (nextType == 'form') {
+                    action = 'form.html?index=' + currentIndex + 1;
+                }
+                else if (nextType == 'text') {
+                    action = 'text.html?index=' + currentIndex + 1;
+                }
+                else if (nextType == 'map') {
+                    action = 'map.html?index=' + currentIndex + 1;
+                }
+                //                    alert('<form id="myform" name="myform" action="' + action + '" method="get">');
+
+            </script>
+
+            <div class="table-responsive">
+
+                <h4>Input the address</h4>
+
+                <form action="#" onsubmit="showAddress(this.address.value); return false">
+                    <p>
+                        <input type="text" size="60" name="address" value=""/>
+                        <input type="submit" value="Search!"/>
+                    </p>
+                </form>
+
+                <script>
+                    document.write('<form id="myform" name="myform" action="'+action+'" method="get">');
+                    document.writeln('<input type="hidden" name="index" value="'+(currentIndex+1)+'">');
+                    oGetVars = getAllParameters()
+                                        for (var key in oGetVars)
+                                            if ((key != 'index') && (key != 'submit')) {
+//                                                alert ('<input type="hidden" name=' + key + ' value="' + oGetVars[key] + '">');
+                                                document.writeln('<input type="hidden" name=' + key + ' value="' + oGetVars[key] + '">');
+                                            }
+                </script>
+                    <table bgcolor="#FFFFCC" width="300">
+                        <tr>
+                            <th>Latitude</b></th>
+                            <th>Longitude</b></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" size="35" name="lat" id="lat" required></td>
+                            <td><input type="text" size="35" name="lng" id="lng" required></td>
+                        </tr>
+                    </table>
+
+
+
+                <br/><br/>
+                <h4>OR<br/><br/>Drag the pin to the actual location</h4>
+                <span>(wait for a moment for the computer to find out your location -- you may have to give permission to the prowser)<br/></span>
+
+                    <div align="center" id="map" style="width: 600px; height: 400px"><br/></div>
+                    <br/><br/>
+                    <input id="submit" name="submit" type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="../../assets/js/docs.min.js"></script>-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

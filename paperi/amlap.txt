@@ -1,0 +1,117 @@
+
+USING TEXT CHUNKING  FOR CONTROLLING A STANDARD PARSER
+
+Fabio Ciravegna
+Istituto per la Ricerca Scientifica e Tecnologica
+Loc. Pante' di Povo I-38050 Trento, Italy
+e-mail: cirave@irst.itc.it
+
+Experimental data coming from phonological and psycholinguistic studies
+showed that prosodic and  performance structures differ from syntactic
+structures hypothesized by linguists.
+
+Abney (1) proposed  the notion  of chunk parsing  for  filling the gap
+between linguistic  theory and evidential  data.  Chunks are text unit
+closely  corresponding to prosodic and performance   units (2).  Cheap
+and efficient finite state techniques can reliably produce chunks (3).
+Abney's original proposal   was to use  the   notion of  chunking  for
+developing new linguistic models.
+
+In  this paper  we  propose  to use  the  notion  of chunks also   for
+controlling  standard bottom-up  parsers.     As it  is    well known,
+bottom-up parsers  produce  many constituents not contributing  to the
+correct final analysis, because they do not consider properly the text
+surrounding the portion under analysis in a given moment.
+
+In (4) we  have  shown how  it  is  possible to improve  the  parser's
+performances by just  identifying non recursive  PPs and DPs.  In this
+paper we enhance that model by using the following nested levels:
+
+        0.  words 
+        1.  non  recursive NPs  and  verb groups  (chunk1) 
+        2.  non recursive PPs and DPs             (chunk2) 
+        3.  clauses and sentences.
+
+Here Abney's prosodic-like structure  is preserved, but the  ``chunk'' level
+is  split in two.   This  is because non recursive  NPs  and verb groups are
+likely to be found as they are in the final parse tree,  whereas DPs and PPs
+can contain nested recursive NPs modifying their  internal NPs.
+
+During  the  analysis, first level chunks are  analyzed  as  firsts and the
+resulting constituents (and  their mutual composition) are  treated as
+preferred during the rest of the analysis.
+
+The  second level is  used  for avoiding  false attachments; for  example to
+forbid the use of NPs contained in pre-verbal PPs as verb subjects.
+
+The third level is used to exploit the information  given by objects such as
+punctuation   marks  (e.g.  commas)  whose    information  is not  exploited
+completely by the grammar (there are  often no strict rules  on their use in
+many languages) but   that is fundamental for   reducing  the complexity  of
+attachments in long texts.
+
+The three levels are also used for  recovering from errors and for producing
+partial results.
+
+Experimental  evidence is   supporting the use  of  the  technique mentioned
+above; we compared the same CYK-like parser's results during two blind tests
+(using or not a chunk-based strategy) on  51 Italian sentences (1370 words).
+The controlled parser showed to be definitely more  efficient (see tables 1a
+and 1b); moreover its (partial) results are qualitatively better.
+
+
++--------------------------------------------------------+
+                      Bibliography 
++--------------------------------------------------------+
+
+(1) (Abney, 1991): Steven P. Abney: ``Parsing By  Chunks'' in Berwick, Abney
+and Tenny (eds): Principle Based Parsing, Kluwer, 1991
+
+(2)  (Abney, 1995):  Steven P. Abney:   ``Chunks  and Dependencies: Bringing
+Processing Evidence  to Bear on Syntax''. In  Computational Linguisti cs and
+The foundation of Linguistic Theory, CLSI, 1995
+
+(3) (Ramshaw, 1995): Lance A. Ramsaw and Mitchell P. Marcus: ``Text Chunking
+Using Transformation-Based  Learning''; 3rd Workshop  on Very  Large Corpora
+June, 1995.  
+
+(4) (Ciravegna,1995)   Fabio Ciravegna and   Alberto Lavelli:  ``On  Parsing
+Control for Efficient Text Analysis''; 4th International Workshop on Parsing
+Technologies, Prague, Czech Republic, September 1995.
+
+
++--------------------------------------------------------+
+                        TABLES 
++--------------------------------------------------------+
+
+TABLE 1a: comparison between controlled and uncontrolled CYK-like parser
+********* (absolute values)
+
+ Parser Type       edges produced      (average per text)    global time 
+
+Non controlled:      292,183                 (5,729)        (02:23:36.550)
+controlled:           58,171                 (1,140)        (00:15:22.200)
+
+
+TABLE 1b: comparison between controlled and uncontrolled CYK-like parser
+********  (percentages)
+
+ Parser Type       edges produced          global time 
+
+Non controlled:        100%                    100%
+controlled:             19%                     10%
+
+
+
+TABLE 2: Segmentation precision using a simple context free grammar (21 rules)
+********
+           number of segments  errors    error rate
+
+chunk1:           906              9         0.99
+chunk2:           505              9         1.78
+clauses:          109              2         1.83
+--------------------------------------------------
+total           1,520             20         1.32
+
+
+

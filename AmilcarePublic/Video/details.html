@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>AKT Consortium: Technology Profile: Amilcare</title>
+</head>
+  <body>
+             
+<h1>Technology Profile: Amilcare</h1>
+             
+<table border="0" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top">                            
+      <p><b>Web homepage:</b><a href="http://nlp.shef.ac.uk/amilcare/">http://nlp.shef.ac.uk/amilcare/</a> 
+    </p>
+                                     
+      <p><b>Developers: </b><a href="mailto:"
+ f.ciravegna@dcs.shef.ac.uk="">Fabio  Ciravegna</a>   </p>
+                                     
+      <p><b>Owner: </b><a href="http://www.shef.ac.uk">University of Sheffield</a> 
+    </p>
+         </td>
+          <td valign="top"><br>
+          </td>
+          <td valign="top" align="center"><img src="intro-image.gif"
+ alt="Amilcare dog" width="100" height="89">
+          <br>
+          </td>
+        </tr>
+               
+  </tbody>    
+</table>
+       
+<p><b>Addresses KM Challenge(s): </b>Knowledge Acquisition </p>
+             
+<p><b>Builds on other technologies:</b> Java, XML, HTML, Gate</p>
+             
+<h2>What's the Problem?</h2>
+             
+<ul>
+         <li>Machine readable content is needed for the Semantic Web<br>
+         </li>
+         <li>Most actual or potential users of the Semantic Web are not experts 
+    in document annotation<br>
+         </li>
+         <li>Manual annotation is difficult, slow, time-consuming, tedious
+ and    costly.</li>
+         <li>Existing Information Extraction approaches are either unable 
+to  cope         with extralinguistic structure (tags, etc.) or ineffective
+ on  free  text.<br>
+         </li>
+             
+</ul>
+             
+<h2>Towards a Solution</h2>
+                     Amilcare is an adaptive <a
+ href="http://gate.ac.uk/ie/">Information Extraction</a> tool designed   to
+ support     document annotation for the Semantic Web. It is designed  to
+be  used by  a  wide range of users from naive users to Information Extraction 
+     experts.  It  can handle a range of text document types (e.g. free texts, 
+     HTML documents,    XML documents, tables etc.) including documents which 
+    contain a mix of these   features and it can be inserted into a wider 
+annotation    environment.<br>
+       <br>
+                     Amilcare uses machine learning to adapt to new application 
+   domains,     learning   a set of rules. Rules are learnt by generalising 
+  over a set  of   examples in  a training corpus annotatates with XML tags. 
+  Amilcare works    in three modes:<br>
+             
+<ul>
+         <li><b>training mode</b>, to induce rules</li>
+         <li><b>testing mode</b>, to test the induced rules on an unseen
+tagged     corpus</li>
+         <li><b>production mode</b>, which annotates any document the system
+  is   provided with using the rules previously induce</li>
+             
+</ul>
+               Amilcare&#8217;s default        architecture includes the connection 
+  with   <a href="http://gate.ac.uk/ie/annie.html">          Annie</a>   
+            , <a href="http://www.gate.ac.uk/">Gate</a>                 
+             &#8217;s        shallow IE system which performs tokenization,   
+    part of speech tagging,        gazetteer lookup and named entity recognition.
+         Any other preprocessor can        be connected via the API. The
+preprocessor          is also the only language-dependent        module,
+the rest of the   system       being language independent.       <br>
+       <br>
+             Some example screen shots are provided here of the user interface. 
+   Amilcare    can however be used without a user interface, simply as an 
+API.<br>
+       <br>
+             
+<div align="center">       
+<h3>Naive User Interface</h3>
+       <img src="naiveinterface.jpg" alt="Naive User Interface"
+ width="100%" height="100%">
+       <br>
+       <br>
+             
+<h3>Expert User Interface</h3>
+       <img src="expertinterface.jpg" alt="Expert User Interface"
+ width="100%" height="100%">
+       <br>
+       <br>
+             
+<h3>Annotation Results</h3>
+       <img src="annotation.jpg" alt="Annotation results" width="100%"
+ height="100%">
+       <br>
+       </div>
+             
+<h2>Take a Guided Tour</h2>
+                   
+<ul>
+      <li>A General Introduction video, in ShockWave <a
+ href="amilcareshort1.html">Flash</a> &nbsp;(0.3 Mb)</li>
+      <li>A Detailed Tutorial video, in ShockWave <a
+ href="amilcaretut.html">Flash</a> ( 1.4 Mb).<br>
+      </li>
+       
+</ul>
+                   
+<h2>Try a Demonstration</h2>
+             
+<p>Please contact <a href="F.Ciravegna@dcs.shef.ac.uk">Fabio Ciravegna</a> 
+               to obtain access. </p>
+             
+<p><b>Technical requirements:</b> Windows 2000, XP, Java Runtime Environment
+         1.3, 512 Mb RAM, 800 MHz Processor </p>
+             
+<h2>Example Applications</h2>
+              Amilcare is currently integrated in the following Semantic
+Web   annotation      tools:                &nbsp;                      
+                 
+<table cellpadding="5">
+         <tbody>
+           <tr>
+             <td><a href="http://kmi.open.ac.uk/projects/akt/MnM/">MnM</a>
+         </td>
+             <td>developed at the Open University, UK</td>
+           </tr>
+           <tr>
+             <td><a
+ href="http://km.aifb.uni-karlsruhe.de/annotation/ontomat.html">        
+ Ontomat</a>         </td>
+             <td> developed at the University of Karlsruhe</td>
+           </tr>
+           <tr>
+             <td><a
+ href="http://www.dcs.shef.ac.uk/%7Ealexiei/Melita.htm">Melita</a>       
+   </td>
+             <td>developed at the University of Sheffield</td>
+           </tr>
+                           
+  </tbody>       
+</table>
+       <br>
+                     and used by the following entities:                &nbsp;
+                                          
+<table cellpadding="5">
+         <tbody>
+           <tr>
+             <td><a href="http://www.merk.de/">Merck</a>           (D)</td>
+             <td><a href="http://www.isoco.com/">ISOCO</a>           (SP)</td>
+           </tr>
+           <tr>
+             <td><a href="http://www.quinary.com/">Quinary</a>          
+(I)</td>
+             <td><a href="http://www.ontoprise.de/">Ontoprise</a>       
+   (D)</td>
+           </tr>
+           <tr>
+             <td><a href="http://www.ucd.ie/">University College Dublin</a> 
+           (IE)</td>
+             <td><a href="http://www.cnrs.fr/">CNRS</a>           (F)</td>
+           </tr>
+                           
+  </tbody>       
+</table>
+             
+<h2>Further Reading</h2>
+             
+<p><b>Key document:<br>
+       </b>Fabio Ciravegna, <i>Designing Adaptive Information Extraction
+for   the    Semantic Web in Amilcare</i>, to appear in S. Handschuh and
+S. Staab   (eds),&nbsp;    "Annotation for the Semantic Web" &nbsp;to appear
+in the  Series &nbsp; "Frontiers   in Artifical Intelligence and Applications"
+by  IOS Press, Amsterdam, 2003.<br>
+       </p>
+             
+<p><b>Other relevant documents</b></p>
+             
+<p><a href="http://www.dcs.shef.ac.uk/%7Efabio">Fabio Ciravegna</a>   , Alexiei
+  Dingli, Daniela Petrelli and Yorick Wilks:<br>
+       "<a href="http://www.dcs.shef.ac.uk/%7Efabio/paperi/Ekaw2002.zip">User-System 
+   Cooperation in Document Annotation based on Information Extraction</a> 
+  "<br>
+       in Asuncion Gomez-Perez, V. Richard Benjamins (eds.): "Knowledge Engineering 
+   and Knowledge Management (Ontologies and the Semantic Web)", Proceedings 
+  of the 13th International Conference on Knowledge Engineering and Knowledge 
+  Management (EKAW02), 1-4 October 2002 - Sig&uuml;enza (Spain), Lecture Notes
+  in Artificial Intelligence 2473, Springer Verlag .<br>
+    Available in the eprints <a
+ href="http://eprints.aktors.org/archive/00000123/">archive</a>.<br>
+       </p>
+             
+<p><a href="http://www.dcs.shef.ac.uk/%7Efabio">Fabio Ciravegna</a>     
+   , Alexiei Dingli, Daniela Petrelli and Yorick Wilks:<br>
+       <em>"Document Annotation via Adaptive Information Extraction"</em><br>
+                    Poster at the 25th Annual International ACM SIGIR Conference
+    on  Research  and Development in Information Retrieval August 11-15,
+2002,     in  Tampere, Finland.<br>
+       </p>
+             
+<p><a href="http://www.dcs.shef.ac.uk/%7Efabio">Fabio Ciravegna</a>     
+   :<br>
+       <em><a
+ href="http://www.dcs.shef.ac.uk/%7Efabio/paperi/IJCAI01.pdf">"Adaptive 
+     Information Extraction from Text by Rule Induction and Generalisation"</a> 
+    </em><br>
+                    in <a href="http://www.ijcai.org/">Proceedings of 17th
+ International      Joint Conference on Artificial Intelligence (IJCAI 2001)</a>
+         , Seattle, August 2001. <br>
+    Available in the eprints <a
+ href="http://eprints.aktors.org/archive/00000118/">archive</a>.<br>
+       </p>
+             
+<p><a href="http://www.dcs.shef.ac.uk/%7Efabio">Fabio Ciravegna</a>     
+   :<br>
+       <em><a
+ href="http://www.dcs.shef.ac.uk/%7Efabio/paperi/Atem01.pdf">"(LP)<sup> 
+         2</sup>, an Adaptive Algorithm for  Information Extraction from Web-related
+     Texts"</a>   </em><br>
+                    in <a href="http://www.smi.ucd.ie/ATEM2001/">Proceedings
+  of  the    IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</a> 
+          , held in conjunction with the 17th International Conference on 
+Artificial      Intelligence (IJCAI-01), Seattle, August, 2001 <br>
+    Available in the eprints <a
+ href="http://eprints.aktors.org/archive/00000120/">archive</a>.<br>
+       </p>
+             
+<p><a href="http://www.dcs.shef.ac.uk/%7Efabio">Fabio Ciravegna</a>     
+    and Daniela Petrelli:<br>
+       <em><a href="http://www.dcs.shef.ac.uk/%7Efabio/paperi/udie.pdf">"User 
+  Involvement    in Adaptive Information Extraction: Position Paper"</a> 
+ </em><br>
+                    in <a href="http://www.smi.ucd.ie/ATEM2001/">Proceedings
+  of  the    IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</a> 
+          , held in conjunction with the 17th International Conference on 
+Artificial      Intelligence (IJCAI-01), Seattle, August, 2001<br>
+    Available in the eprints <a
+ href="http://eprints.aktors.org/archive/00000122/">archive</a>.<br>
+       </p>
+       Enrico Motta, Maria Vargas-Vera, John Domingue, Mattia Lanzoni , Arthur
+   Stutt and Fabio Ciravegna:<br>
+       "MnM: Ontology Driven Semi-Automatic and Automatic Support for Semantic
+   Markup"<br>
+       in Asuncion Gomez-Perez, V. Richard Benjamins (eds.): "Knowledge Engineering 
+   and Knowledge Management (Ontologies and the Semantic Web)", Proceedings 
+  of the 13th International Conference on Knowledge Engineering and Knowledge 
+  Management (EKAW02), 1-4 October 2002 - Sig&uuml;enza (Spain), Lecture Notes
+  in Artificial Intelligence 2473, Springer Verlag <br>
+       <br>
+       Siegfried Handschuh, Steffen Staab and Fabio Ciravegna:<br>
+       "<a
+ href="http://www.aifb.uni-karlsruhe.de/%7Esst/Research/Publications/ekaw2002scream-sub.pdf"> 
+    S-CREAM --- Semi-automatic CREAtion of Metadata</a>   "<br>
+       in Asuncion Gomez-Perez, V. Richard Benjamins (eds.): "Knowledge Engineering 
+   and Knowledge Management (Ontologies and the Semantic Web)", Proceedings 
+  of the 13th International Conference on Knowledge Engineering and Knowledge 
+  Management (EKAW02), 1-4 October 2002 - Sig&uuml;enza (Spain), Lecture Notes
+  in Artificial Intelligence 2473, Springer Verlag <br>
+       Available in the eprints <a
+ href="http://eprints.aktors.org/archive/00000124/">archive</a>.<br>
+         <br>
+    <br>
+    <br>
+ <br>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlgui>
+<form id="1" name="WeSenseIt Sensor" submitTo="loopback" >
+<field name="what" label="Measurement" type="choice" required="Y"  options="Temperature|Pressure|GPS"/>
+</form>
+</xmlgui>
+

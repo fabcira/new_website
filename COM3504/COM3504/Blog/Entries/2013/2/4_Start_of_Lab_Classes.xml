@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="A64659A4-E5F8-4BCC-87E9-6BF460ED0C52">
+  <lastEdited clientType="local-build-20130301" date="2013-03-01 10:11:24 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Intelligent Web Module Blog&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Start of Lab Classes</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>The Lab Classes will start during week 2 on the 15th of February at 3pm RC-G12. Please be there! &#xD;&lt;b&gt;&#xD;Please note: participation in lectures and lab classes is mandatory&lt;/b&gt;.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Monday, 4 February 2013&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="4_Start_of_Lab_Classes_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

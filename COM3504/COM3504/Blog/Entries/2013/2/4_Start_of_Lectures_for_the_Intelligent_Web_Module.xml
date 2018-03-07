@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<content collectionGUID="A64659A4-E5F8-4BCC-87E9-6BF460ED0C52">
+  <lastEdited clientType="local-build-20130301" date="2013-03-01 10:11:24 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Intelligent Web Module Blog&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Start of Lectures for the Intelligent Web Module</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>Lectures will start on the 8th of February and will be held in MAPP-LT03, Mappin Building between 11.00 - 12.50.&#xD;&#xD;&lt;b&gt;Please note: participation in lectures and lab classes is mandatory&lt;/b&gt;.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Monday, 4 February 2013&lt;/b&gt;</richText>
+  </textBox>
+</content>

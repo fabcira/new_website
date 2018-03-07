@@ -1,0 +1,10 @@
+<CATALOG>
+    <ELEMENT field="person"  type="person">
+        <STRING>Details</STRING>
+        <FIELD name="firstname" type="text" size="35" required="true" class="stored" >First Name:</FIELD>
+        <FIELD name="surname" type="text" size="35" required="true" class="stored" >Last Name</FIELD>
+        <FIELD name="email" type="email" size="35" required="true" class="stored" >Email Address:</FIELD>
+        <FIELD name="address"  type="textarea"  rows="5" style="width:100%" form="myform" placeholder="Enter text here..." required="true" class="stored" >Address:</FIELD>
+
+    </ELEMENT>
+</CATALOG>

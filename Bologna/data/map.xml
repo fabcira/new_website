@@ -1,0 +1,5 @@
+<CATALOG>
+    <ELEMENT field="map" type="map">
+    <STRING>MAP</STRING>
+    <ELEMENT type="div" align="center" id="map" style="width: 600px; height: 400px"/>
+</CATALOG>

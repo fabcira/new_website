@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Blog</title>
+    <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog</link>
+    <description>Welcome to the blog of the module. Here I will post news and ideas. Please, subscribe to the RSS feed to be always aware of what is happening!</description>
+    <item>
+      <title>Start of Lectures for the Intelligent Web Module</title>
+      <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lectures_for_the_Intelligent_Web_Module.html</link>
+      <guid isPermaLink="false">4e0bd4b5-090a-48b5-a6b5-ec9cb7946f02</guid>
+      <pubDate>Mon, 4 Feb 2013 11:44:15 +0000</pubDate>
+      <description>Lectures will start on the 8th of February and will be held in MAPP-LT03, Mappin Building between 11.00 - 12.50.&lt;br/&gt;&lt;br/&gt;Please note: participation in lectures and lab classes is mandatory.</description>
+      <iweb:comment enabled="0" count="0" link="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lectures_for_the_Intelligent_Web_Module.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Start of Lab Classes</title>
+      <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lab_Classes.html</link>
+      <guid isPermaLink="false">f20dd288-82a3-4f73-9e36-8fc8022abb92</guid>
+      <pubDate>Mon, 4 Feb 2013 09:52:52 +0000</pubDate>
+      <description>The Lab Classes will start during week 2 on the 15th of February at 3pm RC-G12. Please be there! &lt;br/&gt;&lt;br/&gt;Please note: participation in lectures and lab classes is mandatory.</description>
+      <iweb:image href="Media/object000.jpg"></iweb:image>
+      <iweb:comment enabled="0" count="0" link="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lab_Classes.html#comment_layer"></iweb:comment>
+    </item>
+    <iweb:dateFormat>EEEE, d MMMM y</iweb:dateFormat>
+    <iweb:baseURL>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog</iweb:baseURL>
+    <iweb:maximumSummaryItems>5</iweb:maximumSummaryItems>
+  </channel>
+</rss>

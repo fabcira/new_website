@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<CATALOG>
+
+    <TYPE>
+        <NAME>Sponges</NAME>
+        <ORGANISM>
+            <ORG_NAME>Tube Sponge</ORG_NAME>
+            <RARE>1-2</RARE>
+            <FREQUENT>3-10</FREQUENT>
+            <VERY_FREQUENT>10+</VERY_FREQUENT>
+        </ORGANISM>
+
+        <ORGANISM>
+            <ORG_NAME>Other Sponges</ORG_NAME>
+            <RARE>1-2</RARE>
+            <FREQUENT>3-10</FREQUENT>
+            <VERY_FREQUENT>10+</VERY_FREQUENT>
+        </ORGANISM>
+    </TYPE>
+
+    <TYPE>
+        <NAME>Coelenterates, Corals</NAME>
+
+    </TYPE>
+
+    <TYPE>
+        <NAME>Anellida, Sedentary Worms</NAME>
+
+    </TYPE>
+
+    <TYPE>
+        <NAME>Molluscs, Gastropods (Sea Slugs)</NAME>
+
+
+    </TYPE>
+
+    <TYPE>
+        <NAME>Molluscs, Bivalves</NAME>
+
+    </TYPE>
+
+
+    <TYPE>
+        <NAME>Molluscs, Cephalopods</NAME>
+
+    </TYPE>
+
+
+    <TYPE>
+        <NAME>Arthropods, Crustaceans, Decapods</NAME>
+
+    </TYPE>
+
+
+    <!--<TYPE>-->
+    <!--<NAME> </NAME>-->
+    <!--<XFILE> .xml</XFILE>-->
+    <!--</TYPE>-->
+
+</CATALOG>
+

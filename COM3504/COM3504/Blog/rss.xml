@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>COM4280/COM6864</title>
+    <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Blog.html</link>
+    <description>Welcome to the blog of the module. Here I will post news and ideas. Please, subscribe to the RSS feed to be always aware of what is happening!</description>
+    <generator>iWeb 3.0.4</generator>
+    <image>
+      <url>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Blog_files/droppedImage.jpg</url>
+      <title>COM4280/COM6864</title>
+      <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Blog.html</link>
+    </image>
+    <item>
+      <title>Start of Lectures for the Intelligent Web Module</title>
+      <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lectures_for_the_Intelligent_Web_Module.html</link>
+      <guid isPermaLink="false">4e0bd4b5-090a-48b5-a6b5-ec9cb7946f02</guid>
+      <pubDate>Mon, 4 Feb 2013 11:44:15 +0000</pubDate>
+      <description>Lectures will start on the 8th of February and will be held in MAPP-LT03, Mappin Building between 11.00 - 12.50.&lt;br/&gt;&lt;br/&gt;Please note: participation in lectures and lab classes is mandatory.</description>
+    </item>
+    <item>
+      <title>Start of Lab Classes</title>
+      <link>http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lab_Classes.html</link>
+      <guid isPermaLink="false">f20dd288-82a3-4f73-9e36-8fc8022abb92</guid>
+      <pubDate>Mon, 4 Feb 2013 09:52:52 +0000</pubDate>
+      <description>&lt;a href=&quot;http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lab_Classes_files/droppedImage.jpg&quot;&gt;&lt;img src=&quot;http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Media/object000_1.jpg&quot; style=&quot;float:left; padding-right:10px; padding-bottom:10px; width:183px; height:137px;&quot;/&gt;&lt;/a&gt;The Lab Classes will start during week 2 on the 15th of February at 3pm RC-G12. Please be there! &lt;br/&gt;&lt;br/&gt;Please note: participation in lectures and lab classes is mandatory.</description>
+      <enclosure url="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/COM3504/Blog/Entries/2013/2/4_Start_of_Lab_Classes_files/droppedImage.jpg" length="90008" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

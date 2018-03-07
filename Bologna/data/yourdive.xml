@@ -1,0 +1,23 @@
+<CATALOG>
+    <ELEMENT field="dive" type="dive">
+        <STRING>Details</STRING>
+        <FIELD type="date" name="dive.date" required ="true" class="stored" >Dive Date:</FIELD>
+        <FIELD type="number" name="dive.time" min="0" max="24" required="true" class="stored" >Start diving time (0-24): </FIELD>
+        <FIELD type="number" name="dive.max_depth" min="0" max="500" required ="true" class="stored" >Maximum Depth: </FIELD>
+         <FIELD type="number" name="dive.usual_depth" min="0" max="500" required="true" class="stored" >Depth where you spent most of the time:</FIELD>
+        <FIELD type="number" name="dive.length_in_time" min="0" max="24" required="true" class="stored" >Diving Time(minutes):</FIELD>
+        <FIELD type="number" name="dive.bottom_time" min="0" max="500" required="true" class="stored" >Actual bottom time (minutes):</FIELD>
+        <FIELD type="number" name="dive.water_temperature" min="-20" max="50" required="true" class="stored" >Water temperature(Celsius):</FIELD>
+        <FIELD type="radio" >
+            <STRING>Environment where you spent most of the time:</STRING>
+            <RADIOFIELD type="radio" name="dive.environment" value="coral">Coral Reef</RADIOFIELD>
+            <RADIOFIELD type="radio" name="dive.environment" value="sandy">Sandy Bottom</RADIOFIELD>
+            <RADIOFIELD type="radio" name="dive.environment" value="other">Other</RADIOFIELD>
+        </FIELD>
+        <FIELD name="dive.other_environment" type="text" size="35" class="stored" >If Other, please specify:</FIELD>
+    </ELEMENT>
+</CATALOG>
+
+
+
+

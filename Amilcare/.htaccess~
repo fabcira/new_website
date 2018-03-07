@@ -1,0 +1,6 @@
+AuthName "AKT Secured directory"
+AuthType Basic
+AuthUserFile /share/www/nlp/akt/.htpasswd
+
+allow from all
+require user aktors 

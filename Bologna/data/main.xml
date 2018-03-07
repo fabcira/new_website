@@ -1,0 +1,7 @@
+<CATALOG>
+    <PAGE file="data/welcome.xml" type="text">Welcome</PAGE>
+    <PAGE file="data/aboutyou.xml" type="form">About You</PAGE>
+    <PAGE file="data/yourdive.xml"  type="form">Your Dive</PAGE>
+    <PAGE file="data/map.xml"  type="map">Location</PAGE>
+    <PAGE file="data/taxa.xml"  type="form">Taxa</PAGE>
+</CATALOG>

@@ -1,0 +1,6 @@
+AuthName "Amilcare Secured directory"
+AuthType Basic
+AuthUserFile /share/www/nlp/akt/.htpasswd-amilcare
+
+allow from all
+require valid-user 

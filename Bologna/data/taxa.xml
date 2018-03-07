@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<CATALOG>
+    <ELEMENT field="organism" type="sponge">
+        <STRING>Sponges</STRING>
+        <FIELD type="radio">
+            <STRING>Sponges</STRING>
+            <RADIOFIELD type="radio" STRING="sponges.frequency" value="rare">1-2</RADIOFIELD>
+            <RADIOFIELD type="radio" STRING="sponges.frequency" value="frequent">3-10</RADIOFIELD>
+            <RADIOFIELD type="radio" STRING="sponges.frequency" value="vfrequent">10+</RADIOFIELD>
+        </FIELD>
+        <FIELD type="radio">
+            <STRING>Other Sponges</STRING>
+            <RADIOFIELD type="radio" name="other_sponges.frequency" value="rare">1-2</RADIOFIELD>
+            <RADIOFIELD type="radio" name="other_sponges.frequency" value="frequent">3-10</RADIOFIELD>
+            <RADIOFIELD type="radio" name="other_sponges.frequency" value="vfrequent">10+</RADIOFIELD>
+        </FIELD>
+    </ELEMENT>
+
+    <ELEMENT>
+    <STRING>Coelenterates, Corals</STRING>
+        <FIELD type="radio">
+             <STRING>fire coral (Millepora sp., Milleporina, Hydrozoa)</STRING>
+             <RADIOFIELD type="radio" STRING="firecorals.frequency" value="rare">1-10</RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="firecorals.frequency" value="frequent">11-100 </RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="firecorals.frequency" value="vfrequent">100+</RADIOFIELD>
+         </FIELD>
+        <FIELD type="radio">
+             <STRING>leather coral (Sarcophyton sp., Alcyonacea, Anthozoa)</STRING>
+             <RADIOFIELD type="radio" STRING="leathercoral.frequency" value="rare">1-5</RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="leathercoral.frequency" value="frequent">6-15</RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="leathercoral.frequency" value="vfrequent">15+</RADIOFIELD>
+         </FIELD>
+        <FIELD type="radio">
+             <STRING>soft tree coral (Dendronephthya sp., Aloyonacea, Anthozoa)</STRING>
+             <RADIOFIELD type="radio" STRING="softtreecoral.frequency" value="rare">1-10</RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="softtreecoral.frequency" value="frequent">11-100</RADIOFIELD>
+             <RADIOFIELD type="radio" STRING="softtreecoral.frequency" value="vfrequent">100+</RADIOFIELD>
+         </FIELD>
+
+    </ELEMENT>
+
+    <!--<ELEMENT>-->
+    <!--<STRING>Anellida, Sedentary Worms</STRING>-->
+
+    <!--</ELEMENT>-->
+
+    <!--<ELEMENT>-->
+    <!--<STRING>Molluscs, Gastropods (Sea Slugs)</STRING>-->
+
+
+    <!--</ELEMENT>-->
+
+    <!--<ELEMENT>-->
+    <!--<STRING>Molluscs, Bivalves</STRING>-->
+
+    <!--</ELEMENT>-->
+
+
+    <!--<ELEMENT>-->
+    <!--<STRING>Molluscs, Cephalopods</STRING>-->
+
+    <!--</ELEMENT>-->
+
+
+    <!--<ELEMENT>-->
+    <!--<STRING>Arthropods, Crustaceans, Decapods</STRING>-->
+
+    <!--</ELEMENT>-->
+
+
+    <!--<ELEMENT>-->
+    <!--<STRING> </STRING>-->
+    <!--<XFILE> .xml</XFILE>-->
+    <!--</ELEMENT>-->
+
+</CATALOG>
+

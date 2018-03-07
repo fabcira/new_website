@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+ 
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ 
+  <meta name="ProgId" content="Word.Document">
+ 
+  <meta name="Generator" content="Microsoft Word 9">
+ 
+  <meta name="Originator" content="Microsoft Word 9">
+ 
+  <link rel="File-List" href="./tutorialECAI02_files/filelist.xml">
+  <title>Extracting Information from Internet-related Texts</title>
+  <!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>cirave</o:Author>
+  <o:LastAuthor>fabio</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>14</o:TotalTime>
+  <o:Created>2002-01-09T15:58:00Z</o:Created>
+  <o:LastSaved>2002-01-09T16:06:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1991</o:Words>
+  <o:Characters>11354</o:Characters>
+  <o:Company>university of sheffield</o:Company>
+  <o:Lines>94</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>13943</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackRevisions/>
+  <w:DoNotShowRevisions/>
+  <w:DoNotPrintRevisions/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+ 
+  <style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Monotype Sorts";
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-9.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:normal;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoCommentReference
+	{mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:45.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-9.0pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	layout-grid-mode:line;}
+a:link, span.MsoHyperlink
+	{color:windowtext;
+	text-decoration:none;
+	text-underline:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.Text, li.Text, div.Text
+	{mso-style-name:Text;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:-91%;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	letter-spacing:.2pt;
+	mso-ansi-language:EN-US;}
+p.BalloonText, li.BalloonText, div.BalloonText
+	{mso-style-name:"Balloon Text";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.PARAGRAPHChar, li.PARAGRAPHChar, div.PARAGRAPHChar
+	{mso-style-name:"PARAGRAPH Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:12.25pt;
+	line-height:12.0pt;
+	mso-pagination:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;}
+span.PARAGRAPHCharChar
+	{mso-style-name:"PARAGRAPH Char Char";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.epsrc-normal, li.epsrc-normal, div.epsrc-normal
+	{mso-style-name:"epsrc - normal";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ins
+	{mso-style-type:export-only;
+	text-decoration:none;}
+span.msoDel
+	{mso-style-type:export-only;
+	mso-style-name:"";
+	text-decoration:line-through;
+	display:none;
+	color:red;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-1;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0cm;
+	text-indent:0cm;}
+@list l1
+	{mso-list-id:128670509;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:194739126;
+	mso-list-template-ids:-1750170546;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:349646872;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:407000333;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:451437935;
+	mso-list-template-ids:801901800;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:778647393;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1690370064;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:39.0pt;
+	mso-level-number-position:left;
+	margin-left:39.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1039209468;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1584742650 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l8
+	{mso-list-id:1270284909;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l8:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l9
+	{mso-list-id:1368681594;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:1570536443;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1312832262 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:1865896110;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-248185538 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:1867136031;
+	mso-list-type:simple;
+	mso-list-template-ids:-1;}
+@list l12:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:18.0pt;
+	mso-level-legacy-space:0cm;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:1870407466;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1385694264 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:2070154345;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1479512998 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level1 lfo2
+	{mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F034;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0cm;
+	mso-level-legacy-space:0cm;
+	margin-left:0cm;
+	text-indent:0cm;
+	mso-ansi-font-size:32.0pt;
+	font-family:"Monotype Sorts";}
+@list l0:level1 lfo14
+	{mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:18.0pt;
+	mso-level-legacy-space:0cm;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level1 lfo16
+	{mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:18.0pt;
+	mso-level-legacy-space:0cm;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style> <!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+  <body lang="EN-GB" link="#000000" vlink="purple" style="tab-interval:36.0pt">
+  
+<div class="Section1">
+<div align="Center">    <big><b><a href="http://ecai2002.univ-lyon1.fr/show_en.pl">
+ECAI 2002</a>
+ Tutorial on</b></big><br>
+</div>
+<h1 align="Center" style="text-align: center; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;">
+Information Extraction<ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-31T12:27">
+ from Web Documents</ins><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:50">
+ from the </del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:26">
+Internet</del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:26"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:50">
+Web</del></span></ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:15"><o:p></o:p></del></span></span></h1>
+  
+<p align="Center"><strong>Monday July 22, 2002</strong></p>
+<h1 align="Center" style="text-align: center; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;"><!--[endif]--><o:p></o:p></span></h1>
+<div align="Center">  <b><ins cite="mailto:fabio" datetime="2002-01-09T16:02"><a href="http://www.dcs.shef.ac.uk/cgi-bin/makeperson?F.Ciravegna">
+Fabio Ciravegna</a>
+</ins>, University of Sheffield<br>
+<ins cite="mailto:fabio" datetime="2002-01-09T16:02"><a href="http://www.cs.ucd.ie/staff/nick">
+Nicholas Kushmerick</a>
+</ins>, University College Dublin</b> <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:15"><o:p></o:p></del></span>
+  </div>
+<p class="MsoNormal" align="Center" style="text-align: center; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:07"><!--[if !supportEmptyParas]-->
+ <!--[endif]--></del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:07"><o:p></o:p></del></span></span></p>
+  
+<h3 align="Center" style="margin-top: 0cm; text-align: center; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></span></h3>
+  
+<h3 style="mso-list:none;mso-list-ins:Unknown 19000000T0000"><b><span style="font-size: 13pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:27">
+Short Description</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+ </ins></span></b></h3>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:29">
+The aim of the tutorial is to provide an insight into </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+Web-based </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:29">
+Adaptive Information Extraction from texts from the point of view of both
+research and applications.<span style="mso-spacerun: yes">  </span></ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-31T12:28">
+We intend to discuss issues related to designing, implementing and using
+an adaptive IE system. <span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T15:57"><ins datetime="2001-10-31T12:28">
+We believe that these issues are fundamental in understanding the potential
+and limitations of current technology both in research and application terms.
+</ins></del></span></ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:29">
+The tutorial is designed for researchers, students and practitioners in the
+area of IE as well as in related areas such as information retrieval, data
+integration, natural language processing, machine learning and text mining.
+</ins><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:00"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-31T12:28">
+the potentialations</del></span></ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:29">
+The audience is expected to have very limited knowledge of IE.<o:p></o:p></ins></span></p>
+  
+<h3 style="mso-list:none;mso-list-ins:Unknown 19000000T0000"><b><span style="font-size: 13pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:28">
+Background</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:27"><o:p></o:p></ins></span></b></h3>
+  
+<p class="MsoNormal" style="text-align: justify; ">Nowadays, most knowledge
+is stored in an unstructured textual format. We can’t query it in simple
+ways, thus automatic systems can’t <span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:01">
+use </del></span><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:01">
+mani<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-31T12:29"><ins datetime="2001-10-30T17:01">
+u</ins></del></span>pulate, and humans can’t easily manage, </ins>the contained
+knowledge<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:01">
+ and humans can’t easily manage it</del></span>. <span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+Shallow information retrieval tools such as search engines can help users
+find documents that are broadly relevant.<span style="mso-spacerun: yes">
+  </span>However, such approaches do not enable fine-grained complex queries, 
+such as finding specific document fragments (“<i>1676.79</i>”) that answer 
+detailed questions (“<i>At what value did NASDAQ close today?</i>”).<span style="mso-spacerun: yes">
+  </span></span>Many <span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+fields </del></span><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+fields </ins>(e.g. Knowledge Management) <span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+deeply </del></span>suffer from the bottleneck of acquiring knowledge from
+texts.<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+ </del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:08"><o:p></o:p></ins></p>
+  
+<p class="MsoNormal" style="text-align: justify; text-indent: 18pt; ">In
+this context, <i>information extraction</i> (IE) from texts is one of the
+most promising areas of human language technology. IE is an automatic method
+for locating important facts in electronic documents—for example, information
+highlighting for enriching a document or storing information for further
+use (<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+such as</del></span><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+e.g. </ins><span style="mso-spacerun: yes"> </span>populating an ontology
+or <span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+a </del></span>data<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+ </del></span>base<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:04">
+ </del></span><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:02">
+with instances</del></span><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:04">
+)</del></span><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:04">
+)</ins>. <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:08"><o:p></o:p></del></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; text-indent: 18pt; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+Information extraction has a long history, originating in the natural language
+processing community (cf<span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:50">
+r</del></span>. the MUC conferences).<span style="mso-spacerun: yes">  </span>
+Most of the work in the past referred to IE from newspaper-like texts. This
+is a serious limitation for portability, especially for areas such as Knowledge
+Management, where an </span>increase in the use of Inter- and intranet technologies
+has moved the focus from free-texts-only scenarios (based on, for example,
+reports and protocols) to more composite scenarios including semi- and structured
+texts such as Web pages, <span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+emails and Usenet posts. Linguistically intensive approaches as used in classical
+IE systems are difficult or unnecessary in such cases [Ciravegna 2001b].
+<o:p></o:p></span></p>
+  <span style="text-align: justify; text-indent: 18pt; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;">
+Moreover the main barrier to the use of IE in real world applications is
+the difficulty in adapting IE systems to new scenarios and tasks, as most
+of the current technology still requires the intervention of IE experts.
+This makes IE a technology difficult to apply, because personnel skilled
+in IE are difficult to find in industry, especially in small medium enterprises
+[Ciravegna 2000]. One of the main current research goals for IE is developing
+methodologies to enable people with no or scarce preparation in IE to adapt
+IE systems. This is particularly important for fields such as Knowledge Management
+where IE is just one of the many technologies to be used in building complex
+applications: wider acceptance of IE will come only when IE tools will not
+require any specific skill apart from notions of KM. The potential market 
+for such tools is quite large.<o:p></o:p></span></span>  
+<p class="MsoNormal" style="text-align: justify; text-indent: 18pt; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+In the last years a new research focus on adaptive IE has arisen at the convergence
+of natural language processing, Web information integration, and machine
+learning. The goal of this work is to produce IE algorithms and systems that
+can be rapidly adapted to new Web-based domains and scenarios.<span style="mso-spacerun: yes">
+  </span>Some of this work (e.g. [Kushmerick 97, 00; Muslea 98]) focuses
+on “wrapper induction”, where the documents to be extracted are highly regular,
+such as HTML text emitted by CGI scripts.<span style="mso-spacerun: yes">
+  </span>Adaptive IE algorithms have also been developed for the sort of
+natural text that original<ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:06">
+ly</ins> motivated IE research, such as newspaper articles and email messages
+(e.g. [Califf 98; Freitag 99; Freitag 00]).<span style="mso-spacerun: yes">
+  </span>Finally, hybrid approaches have been developed that promise accurate
+extraction from both regular HTML and natural texts (e.g., [Soderland 99;
+Freitag &amp; Kushmerick 00; Ciravegna 01]).<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; text-indent: 18pt; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+Adaptive Web-based IE has <ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:41">
+been </ins>shown to be feasible and successful both from a scientific and
+application point of view.<span style="mso-spacerun: yes">  </span>As a result,
+a variety of real-world applications have started to appear, ranging from
+<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:09">
+knowledge </del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:09">
+Knowledge M</ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:09">
+m</del></span>anagement to e-business, and<ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:42">
+ </ins>the application of IE to the Internet is gaining increasing importance
+from an economic point of view.<o:p></o:p></span></p>
+  
+<h3><b><span style="font-size: 13pt; "><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+Tutorial Objectives</del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30"><o:p></o:p></del></span></span></b></h3>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+The aim of the tutorial is to provide an insight </del></span><ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:42"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+into </del></span></ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+view of the technology from the point of view of both research and application</del></span><ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:42"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+s</del></span></ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+.<span style="mso-spacerun: yes">  </span>The tutorial is designed for researchers, 
+students and practitioners in the area of IE as well as in related areas
+such as information retrieval, data integration, natural language processing, 
+machine learning and text mining. The intended goal is to provide an insight
+of the </del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:57">
+problems </del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30">
+related to adaptive </del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:55">
+I</del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:30"><o:p></o:p></del></span></span></p>
+  <span style="font-size: 13pt; "><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:57">
+Tutorial Objectives: What should attendees      know or be able to do as
+a result of taking the tutorial and why is the      topic important? </del></span><span class="msoDel"></span></span>
+  
+<p class="MsoNormal"><span style="font-size: 13pt; "><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:57"><!--[if !supportEmptyParas]-->
+ <!--[endif]--></del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:57"><o:p></o:p></del></span></span></p>
+  
+<h3 style="text-align: justify; "><b><span style="font-size: 13pt; ">Preliminary
+Program<o:p></o:p></span></b></h3>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;">
+The proposed half-a-day tutorial will cover the following topics: <o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><b style="mso-bidi-font-weight:
+normal"><span style="layout-grid-mode:line">
+1.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+      </span></span></b><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="layout-grid-mode:line"><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:10">
+IE and the Web</del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:10">
+Introduction</ins>: <ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59">
+what is IE, </ins>what can we extract <ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59">
+from the Web </ins><span class="msoDel"><del cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:43">
+there </del></span>and why? (20 minutes) <o:p></o:p></span></b></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -9pt; "><!--[if !supportLists]--><span style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span style="layout-grid-mode:line">Potential
+and current<ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:43">
+ </ins>real world applications scenarios. Knowledge Management as a context
+for using adaptive IE from Web documents.<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><b style="mso-bidi-font-weight:
+normal"><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line">
+2.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+      </span></span></b><!--[endif]--><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="mso-ansi-language:
+EN-US;layout-grid-mode:line">
+Algorithms and methodologies (75 min)<o:p></o:p></span></b></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -9pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line">
+Inducing <ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:43">
+w</ins><span class="msoDel"><del cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:43">
+W</del></span>rappers for extracting information: from <ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:44">
+a </ins>simple wrapper for HTML pages to semi-structured texts. (10 min)<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -9pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line">
+IE, the Web and NLP: the role of language analysis. What can we <ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:44">
+transfer </ins><span class="msoDel"><del cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:44">
+inherit </del></span>from the classical MUC approaches? (5 min)<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -9pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line">
+Data mining and IE: what can we <ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:45">
+learn </ins><span class="msoDel"><del cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:45">
+inherit </del></span>from there. (5 min)<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -9pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line">
+Some algorithms for IE from Web-related documents (55 min)<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 45pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+         </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line">
+Statistical Approaches: SRV [Freitag 1998],<span style="mso-spacerun: yes">
+  </span>HMM [Freitag 1999], BWI [Frietag &amp; Kushmerick 2000]<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 45pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+         </span></span><!--[endif]--><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line">
+Linguistic approaches: Rapier [Califf 1998], (LP)<sup>2</sup> [Ciravegna
+2001]<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><b style="mso-bidi-font-weight:
+normal"><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line">
+3.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+      </span></span></b><!--[endif]--><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="mso-ansi-language:
+EN-US;layout-grid-mode:line">
+The adaptation problem: Enabling non-experts to port IE systems (50 min)<o:p></o:p></span></b></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US">Scenario definition: eliciting
+the scenario definition from the user: problems and solutions</span></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US">Identifying the correct
+training material: <ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11">
+tools, </ins>common mistakes and solutions</span></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US">Preparing the training
+material; tagging texts: methodologies for reducing the amount of tagging:
+bootstrapping and <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11">
+bootstrapping</del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11">
+active learning</ins>.</span></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; ">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></span><!--[endif]--><span lang="EN-US">Tuning the system’s performances
+to the application needs: methodologies for helping <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11">
+a </del></span>non-expert<ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11">
+s</ins> controlling an adaptive system</span></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; "><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:03">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></del></span></span><!--[endif]--><span lang="EN-US">Application
+monitoring: checking <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:20">
+the application </del></span>performances during the application life time.<span style="mso-prop-change:fabio 20020109T1603"><span style="mso-prop-change:fabio 20020109T1603"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:03"><o:p></o:p></del></span></span></span></span></p>
+  
+<p class="MsoBodyTextIndent" style="margin-left: 18pt; text-align: justify; "><!--[if !supportLists]--><span lang="EN-US" style="font-family: Symbol; "><ins cite="mailto:fabio" datetime="2002-01-09T16:03">
+·<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+   </span></ins></span><!--[endif]--><span lang="EN-US"><ins cite="mailto:fabio" datetime="2002-01-09T16:03"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="mso-list:none;mso-list-change:&quot;%1\:8\:0\:\.&quot; &quot;Christopher Brewster&quot; 20010115T1840"><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="mso-ansi-language:
+EN-US;layout-grid-mode:line"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:19"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+Putting IE into practice: </del></span></ins></span></b><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+A case study </del></span><ins cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:46"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+in </del></span></ins><span class="msoDel"><del cite="mailto:Christopher%20Brewster" datetime="2001-01-15T18:46">
+for </del></span><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+the use of IE in real-world application</del></span><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:06"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:02">
+ </del></span></ins><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:07">
+s</del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:20"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:06">
+:</del></span></ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:20">
+ (5 min)</del></span><sub><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:07"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:02">
+L</del></span></ins><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:11"><o:p></o:p></del></span></sub></span></p>
+  
+<p class="MsoNormal"><sub><span lang="EN-US" style="mso-ansi-language:EN-US;
+layout-grid-mode:line"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T17:07">
+L</del></span><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:02">
+earning</del></span></span></sub><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+Pinocchio [Ciravegna 2001]</del></span><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:20"><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05">
+ (5 min)</del></span></ins><span class="msoDel"><del cite="mailto:fabio" datetime="2002-01-09T16:05"><o:p></o:p></del></span></span></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:fabio" datetime="2002-01-09T16:04">
+4.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+      </span></ins></span></b><!--[endif]--><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:fabio" datetime="2002-01-09T16:04">
+Putting IE</ins><ins cite="mailto:fabio" datetime="2002-01-09T16:05"> into
+practice:</ins><ins cite="mailto:fabio" datetime="2002-01-09T16:04"> </ins></span></b><span lang="EN-US" style="mso-ansi-language:EN-US;layout-grid-mode:line"><ins cite="mailto:fabio" datetime="2002-01-09T16:05">
+A case study in the use of IE in real-world application LearningPinocchio
+[Ciravegna 2001] (5 min</ins><ins cite="mailto:fabio" datetime="2002-01-09T16:06">
+)</ins></span><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:fabio" datetime="2002-01-09T16:04"><o:p></o:p></ins></span></b></p>
+  
+<p class="MsoNormal" style="margin-left: 18pt; text-align: justify; text-indent: -18pt; "><!--[if !supportLists]--><b style="mso-bidi-font-weight:
+normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+5.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none; ">
+      </span></span></b><!--[endif]--><b style="mso-bidi-font-weight:normal"><span lang="EN-US" style="mso-ansi-language:
+EN-US;layout-grid-mode:line"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:12">
+Conclusion, </ins>Future Work (10 min) and Discussion (15 min)</span></b><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><o:p></o:p></span></b></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 13pt; "><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59"><!--[if !supportEmptyParas]-->
+ <!--[endif]--></del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59"><o:p></o:p></del></span></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 13pt; "><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59">
+Intended audience: researchers, students and practitioners in the area of
+information retrieval, data integration, information extraction, natural
+language processing, machine learning and text mining.</del></span><span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T14:59"><o:p></o:p></del></span></span></p>
+  
+<h3 style="text-align: justify; "><b style="mso-bidi-font-weight:normal"><span style="font-size: 13pt; ">
+Proposers<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:16"><o:p></o:p></del></span></span></b></h3>
+  
+<h3 style="text-align: justify; "><span style="font-size: 13pt; "><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></span></h3>
+  
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+Fabio Ciravegna</span></b><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+ (Primary contact) · p: Computer Science Department, University of Sheffield,
+Regent Court, 211 Portobello Street, Sheffield, S1 4DP, UK · t: +44-114-22-21940
+· f: +44-114-22-21810 · e: F.Ciravegna@dcs.shef.ac.uk · w: http://www.dcs.shef.ac.uk/~fabio.<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:05"><o:p></o:p></del></span></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+ <!--[endif]--><o:p></o:p><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:32">
+<!--[endif]--><o:p></o:p></ins></span></p>
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;">
+Fabio has been active in information extraction from texts since 1988. His
+work on IE has been published in a number of conferences such as EACL-99,
+IJCAI-99, ECAI-00 and IJCAI01. Fabio co-organised the workshop on information
+extraction and machine learning at ECAI-00 the IJCAI-2001 Workshop on “Adaptive
+Text Extraction and Mining”. He held an invited tutorial on IE at AIIA99.
+He has been on the program committee for numerous international workshops
+and conferences. Fabio has relevant experience in both industrial and academic
+research. He has been in charge of the IE projects at Fiat Research Centre,
+Turin, Italy from 1991 to 1993. He has been coordinating the IE projects
+at ITC-Irst, Trento, Italy from 1995 to 2000. He is now senior research fellow
+at the Department of Computer Science of the University of Sheffield, UK.
+He is <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:26">
+currently </del></span>the Sheffield’s manager for the AKT project (www.aktors.org),
+a multimillion project on the future of Knowledge Management <span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:16">
+(KM) </del></span>funded by EPSRC. Sheffield’s role in AKT is to elaborate
+language-based solutions for KM.<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:06"><o:p></o:p></del></span></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:12"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00">
+Relevant bibliography</ins></span></b><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00">
+ (</ins></span><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22">
+complete list at:</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:06">
+ </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00"><a href="http://www.dcs.shef.ac.uk/%7Efabio/cira-papers.html">
+http://www.dcs.shef.ac.uk/~fabio/cira-papers.html</a>
+</ins></span><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00">
+):</ins><ins cite="mailto:fabio" datetime="2002-01-09T15:58"><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:00"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><span style="mso-prop-change:fabio 20020109T1558"><ins cite="mailto:fabio" datetime="2002-01-09T15:57"><span style="mso-prop-change:fabio 20020109T1558">
+Fabio Ciravegna</span></ins></span></span><span style="font-size: 10pt; "><span style="mso-prop-change:fabio 20020109T1558"><ins cite="mailto:fabio" datetime="2002-01-09T15:57"><span style="mso-prop-change:
+fabio 20020109T1558">
+: </span></ins><span style="mso-prop-change:fabio 20020109T1558"><ins cite="mailto:fabio" datetime="2002-01-09T15:58"><span style="mso-prop-change:
+fabio 20020109T1558">
+"Challenges in Information Extraction from Text for Knowledge Management
+" in<span style="mso-spacerun: yes">  </span>IEEE<span style="mso-prop-change:fabio 20020109T1558">
+ Intelligent Systems and Their Applications, November 2001, (Trend and Controversies)</span></span></ins><span style="mso-prop-change:fabio 20020109T1558"><ins cite="mailto:fabio" datetime="2002-01-09T15:57"><span style="mso-prop-change:fabio 20020109T1558"><o:p></o:p></span></ins></span></span></span></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Fabio Ciravegna: "Adaptive Information Extraction from Text by Rule Induction
+and Generalization" to appear in <i style="mso-bidi-font-style:normal">Proceedings 
+of <a href="http://www.ijcai.org/">17th International Joint Conference on 
+Artificial Intelligence (IJCAI 2001)</a>
+,</i> Seattle, August 2001.<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Fabio Ciravegna: "(LP)<sup>2</sup>, an Adaptive Algorithm for Information
+Extraction from Web-related Texts"<span style="mso-spacerun: yes">  </span>
+in Proceedings of the <i style="mso-bidi-font-style:normal"><a href="http://www.smi.ucd.ie/ATEM2001/">
+IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</a>
+</i> </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:05">
+workshop at </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+IJCAI-01, Seattle, August, 2001 <o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Fabio Ciravegna and Daniela Petrelli "User Involvement in Adaptive Information 
+Extraction" in <i style="mso-bidi-font-style:normal">Proceedings of the <a href="http://www.smi.ucd.ie/ATEM2001/">
+IJCAI-2001 Workshop on Adaptive Text Extraction and Mining</a>
+</i> </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:04">
+workshop at </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+IJCAI-01, Seattle, August, 2001 <o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+K. Bontcheva, C. Brewster, F. Ciravegna, H. Cunningham, L. Guthrie, R. Gaizauskas
+and Y. Wilks</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:03">
+: </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+"Using HLT for Acquiring, Retrieving and Publishing Knowledge in AKT</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:17">
+ </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">"<span style="mso-spacerun: yes">
+  </span>in <i style="mso-bidi-font-style:normal"><a href="http://www.elsnet.org/acl2001-hlt+km.html">
+2001 EACL/ACL Workshop on Human Language Technology and Knowledge Management</a>
+</i> (HLT &amp; KM), workshop at the <a href="http://www.irit.fr/ACTIVITES/EQ_ILPL/aclWeb/acl2001.html">
+39th Annual Meeting of the Association for Computational Linguistics</a>
+, Toulouse, </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:18">
+2001,</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+France<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Fabio Ciravegna, Alberto Lavelli, Giorgio Satta: "<a href="file:///C:/Documents%20and%20Settings/Temporary%20Internet%20Files/Content.IE5/QHAFINIP/paperi/ecai2000.ps">
+Bringing Information Extraction out of the Labs: the Pinocchio Environment</a>
+" </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:03"><span style="mso-spacerun: yes">
+ </span></ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+in W. Horn (ed.) <i style="mso-bidi-font-style:
+normal">ECAI2000, Proceeding
+of the 14th European Conference on Artificial Intelligence</i>, IOS Press,
+Amsterdam, August 2000. <o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Fabio Ciravegna, Alberto Lavelli, Nadia Mana , Luca Gilardoni, Silvia Mazza,
+Johannes Matiasek, William Black, Fabio Rinaldi, David Mowatt </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:03"><span style="mso-spacerun: yes">
+ </span></ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01"><a href="http://www.dcs.shef.ac.uk/%7Efabio/paperi/ijcai99.ps.gz.uu">
+"Classifying Texts Integrating Pattern Matching and Information Extraction"</a>
+ </ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:03"><span style="mso-spacerun: yes">
+ </span></ins><i style="mso-bidi-font-style:normal"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Proceedings of the Sixteenth International Joint Conference on Artificial
+Intelligence (<a href="http://www.dsv.su.se/ijcai-99/">IJCAI99</a>
+), </ins></i><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:01">
+Stockholm, August, 1999.<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></span></p>
+  
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+Nicholas Kushmerick</span></b><span style="mso-fareast-font-family:&quot;MS Mincho&quot;">
+ · p: Smart Media Institute, Computer Science Department, University College
+Dublin, Dublin 4, Ireland · t: +353-1-716-2479 · f: +353-1-269-7262 · e:
+nick@ucd.ie · w: http://<a href="http://www.cs.ucd.ie/staff/nick"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;">
+www.cs.ucd.ie/staff/nick</span></a>
+.<span class="msoDel"><del cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:06"><o:p></o:p></del></span></span></p>
+  
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:33"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:
+&quot;MS Mincho&quot;">
+Nick has been actively involved in the machine learning and information extraction
+communities for several years. His work on information extraction was published
+in IJCAI-97, AAAI-99, AAAI-00, AIJ, and the World Wide Web Journal. Nick
+received his PhD in 1997 from the University of Washington.<span style="mso-spacerun: yes">
+  </span>Nick helped organise the AAAI-98 Workshop on AI &amp; Information
+Integration, the ECAI-99 Workshop on Intelligent Information Integration,
+the AAAI-99 Workshop on Machine Learning for Information Extraction, the
+SIGMOD-2001 Workshop on the Web and Databases, and the IJCAI-2001 Workshop
+on Adaptive Text Extraction and Mining.<span style="mso-spacerun: yes"> 
+</span>Nick is a College Lecturer in the Computer Science Department at University
+College Dublin, Ireland.<o:p></o:p></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><b style="mso-bidi-font-weight:normal"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13">
+Relevant bibliography</ins></span></b><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13">
+ (</ins></span><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:33">
+complete list at</ins><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13">
+ </ins></span><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13">
+http://<a href="http://www.cs.ucd.ie/staff/nick"><span style="mso-fareast-font-family:
+&quot;Times New Roman&quot;">
+www.cs.ucd.ie/staff/nick</span></a>
+</ins><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:57">
+/home/research/pubs.html</ins></span><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13">
+):</ins><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53"><o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><!--[if !supportLists]--><!--[endif]--><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Chinenyanga, T. &amp; Kushmerick, N. (2001) “An expressive and efficient
+language for XML information retrieval.” <i>Journal of the American Society
+for Information Science &amp; Technology</i> (special issue on XML and Information
+Retrieval), in press.<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:56">
+Kushmerick, N., Johnston, E. &amp; McGuinness, S. (2001) “Information extraction
+by text classification.” <i>Proc. Workshop on Adaptive Text Extraction and
+Mining, International Joint Conference on Artificial Intelligence</i> (IJCAI) 
+(Seattle).<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:56">
+Freitag, D. &amp; Kushmerick, N. (2000) “Boosted wrapper induction”. <i>Proc
+17th American National Conference on Artificial Intelligence</i> (AAAI) (Austin),
+pp. 577-583.<i><o:p></o:p></i></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Kushmerick, N. (2000) “Wrapper verification.” <i>World Wide Web Journal</i>
+ 3(2):79-94 (special issue on Web Data Management).<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Kushmerick, N. (2000) “Wrapper induction: Efficiency and expressiveness.”
+<i>Artificial Intelligence Journal</i> 118(1-2):15-68 (special issue on Intelligent
+Internet Systems).<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Kushmerick, N. (1999) “Gleaning the Web”. <i>IEEE Intelligent Systems</i>
+, 14(2):20-22 (special issue on Intelligent Agents).<o:p></o:p></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Kushmerick, N. (1999) “Regression testing for wrapper maintenance.” <i>Proc</i>
+ <i>16th American National Conference on Artificial Intelligence</i> (AAAI)
+(Orlando), pp. 74-79.<i><o:p></o:p></i></ins></span></p>
+  
+<p class="MsoNormal" style="margin-left: 9pt; text-indent: -9pt; "><span lang="EN-US" style="font-size: 10pt; "><ins cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:53">
+Kushmerick, N., Weld, D., &amp; Doorenbos, B. (1997) “Wrapper Induction for
+Information Extraction.” <i>Proc. 15th Int. Joint Conf. on Artificial Intelligence</i>
+ (IJCAI) (Nagoya), pp. 729-735.<o:p></o:p></ins></span></p>
+  
+<h4 style="mso-list:none;mso-list-ins:&quot;Nicholas Kushmerick&quot; 20011030T1653"><span style="mso-prop-change:&quot;Christopher Brewster&quot; 20011030T1656"><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:58"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><span style="mso-prop-change:&quot;Christopher Brewster&quot; 20011030T1656"><o:p></o:p></span></del></span></ins></span></h4>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:13"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52">
+Xxxxxx</del></span><ins datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><o:p></o:p></del></span></ins></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:33"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="font-size: 10pt; "><ins cite="mailto:Fabio%20Ciravegna" datetime="2001-10-30T15:22"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--><o:p></o:p></del></span></ins></span></p>
+  
+<p class="MsoNormal" style="text-align: justify; "><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><!--[if !supportEmptyParas]-->
+ <!--[endif]--></del></span><span class="msoDel"><del cite="mailto:Nicholas%20Kushmerick" datetime="2001-10-30T16:52"><o:p></o:p></del></span></span></p>
+  
+<h3 style="text-align: justify; "></h3>
+<p class="MsoNormal" style="margin-left: 3pt; text-align: justify; "> <!--[endif]--><o:p></o:p></p>
+  </div>
+  
+</body>
+</html>

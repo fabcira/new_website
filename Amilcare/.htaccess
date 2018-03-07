@@ -1,0 +1,6 @@
+AuthName "Amilcare Secured directory"
+AuthType Basic
+AuthUserFile /home/fabio/public_html/.htpasswd
+
+allow from all
+require valid-user 
