@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!--THIS FILE HAS A JAVASCRIPT IN THE HEAD FOR GMAPS. IF YOU RECREATE IT FROM TEMPLATE, COPY THE LINE INTO THE NEW FILE-->
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content=''>
+    <meta name='author' content=''>
+
+    <title> Fabio Ciravegna </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href='css/bootstrap.css' rel='stylesheet'>
+
+    <!-- Documentation extras -->
+    <link href='css/docs.css' rel='stylesheet'>
+    <link href='css/pygments-manni.css' rel='stylesheet'>
+    <script src='js/jquery.js'></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src='js/html5shiv.js'></script>
+    <script src='js/respond.min.js'></script>
+    <![endif]-->
+
+    <!-- HERE IS THE GMAPS LINE TO COPY -->
+    <!-- HERE IS THE GMAPS LINE TO COPY -->
+    <!-- HERE IS THE GMAPS LINE TO COPY -->
+    <!-- HERE IS THE GMAPS LINE TO COPY -->
+    <!-- HERE IS THE GMAPS LINE TO COPY -->
+    <script type='text/javascript'
+            src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDRjsAupVw6hqUhhPPv95i2efr9H8fiNoM'>
+    </script>
+
+    <!-- Place anything custom after this. -->
+</head>
+<body style='background: rgb(0, 0, 0); margin: 0pt;'>
+<div>
+    <!--navigation menu-->
+    <script type='text/javascript' src='jstemplate/navigation.js'></script>
+    <script src='jstemplate/prebody.js'></script>
+
+    <div class='panel panel-default' style='padding: 0px 30px 0px 30px'>
+        <div class='page-header'><h1>Contacts and Directions</h1></div>
+
+        <div id='cotf' style='background: rgb(255, 255, 255); padding:0px 15px 15px 15px;'>
+
+            <!--    START OF CONTENT -->
+
+
+            <script>
+                function initialize() {
+                    var myLatlng = new google.maps.LatLng(53.383556, -1.478933);
+                    var mapOptions = {
+                        zoom: 16,
+                        center: myLatlng
+                    }
+                    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+// To add the marker to the map, use the 'map' property
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        map: map,
+                        title: "Hello!"
+                    });
+                    var infowindow = new google.maps.InfoWindow({
+                        content: '<IMG BORDER="0" ALIGN="Left" height="82"  hspace="10"  vspace="10" SRC="imgs/fabio.jpg"> You can find me at the Department of Computer Science, The University of Sheffield <br/>(Kroto Research Institute, North Campus)',
+                        maxWidth: 280
+                    });
+
+                    infowindow.open(map, marker);
+                    google.maps.event.addListener(marker, 'click', function () {
+                        infowindow.open(map, marker);
+                    });
+
+
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+            <div>
+
+                <div>
+                    <div>
+
+                        <div class="col-lg-3" style='height:400px;background: #000000; padding:10px'>
+
+                            <div>
+
+                                <img src="imgs/crest-xl.gif" alt=""
+                                     style="border: none; height: 102px; width: 258px; "/></div>
+                            <p/>
+
+                            <div style="color:#FFFFFF">
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <!--schema.org annotation-->
+                                <div itemscope itemtype="http://schema.org/Person">
+                                    <p><span itemprop="jobTitle">Professor</span>
+                                        <span itemprop="name">Fabio Ciravegna</span>
+                                        <img hidden="visibility:hidden;" src="imgs/fabio.jpg" itemprop="image"/>
+                                        <br/><a onclick="window.open(this.href); return false;"
+                                                title="http://oak.dcs.shef.ac.uk/"
+                                                href="http://oak.dcs.shef.ac.uk/"
+                                                onkeypress="window.open(this.href); return false;">OAK Group,</a><br/><a
+                                                class="class2" title="http://www.sheffield.ac.uk/dcs"
+                                                href="http://www.sheffield.ac.uk/dcs">
+                                            Department of Computer Science,</a><br/>
+                                        <a class="class3" title="http://www.shef.ac.uk/"
+                                           href="http://www.shef.ac.uk/">
+                                            <span itemprop="affiliation">University of Sheffield,</span></a>
+
+                                        <br/><br/>
+
+                                    <div itemprop="address" itemscope
+                                         itemtype="http://schema.org/PostalAddress">
+                                        Office LG015, Lower Ground, <br/>Kroto Research Institute, <br/>
+                                        <span itemprop="streetAddress">Red Hill,</span>
+                                        <span itemprop="addressLocality">Sheffield</span>, <br/><span
+                                            itemprop="postalCode">S3 7HQ</span>,
+                                        <br/><span itemprop="addressRegion">United Kingdom</span><br/>
+                                    </div>
+                                    Tel: <span itemprop="telephone">+44(0)1142221940</span>
+                                    <br/>Fax: <span itemprop="faxNumber">+44(0)1142221810</span>
+                                    <a title="mailto:F.Ciravegna@shef.ac.uk?subject="
+                                       href="mailto:F.Ciravegna@shef.ac.uk?subject=" itemprop="email"></a>
+                                    <a href="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/"
+                                       itemprop="url"></a>
+                                    <!--END of schema.org annotation-->
+                                    <!--END of schema.org annotation-->
+                                    <!--END of schema.org annotation-->
+                                    <!--END of schema.org annotation-->
+                                    <!--END of schema.org annotation-->
+                                    <!--END of schema.org annotation-->
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <div id='map-canvas' border='1' style='height:400px; width:600px;'/>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div></a>
+
+                            <h3>Writing to me:<br/></h3>
+
+                            <p>My email address is <a title="mailto:F.Ciravegna@shef.ac.uk?subject="
+                                                      href="mailto:F.Ciravegna@shef.ac.uk?subject=">f.ciravegna@shef.ac.uk</a>
+                                If you have never written to me before, I would appreciate if you could take a look at
+                                <a href="Emailing.html">some tips on writing an email and getting a reasonably rapid
+                                    answer from me.</a></p>
+
+                            <h3>Directions:<br/></h3>
+
+                            <p>My office is LG015, on the Lower Ground of The Kroto Research Institute</p>
+                            <ol>
+                                <li>
+                                    <p
+                                    ><a
+                                            title="http://www.shef.ac.uk/visitors/"
+                                            href="http://www.shef.ac.uk/visitors/">How
+                                        to get to Sheffield</a> <br/></p>
+                                </li>
+                                <li>
+                                    <p
+                                    ><a
+                                            title="http://www.shef.ac.uk/dcs/travel.html"
+                                            href="http://www.shef.ac.uk/dcs/travel.html">How to get to the Department of
+                                        Computer Science</a> <br/></p>
+                                </li>
+                            </ol>
+                            <p class="paragraph_style_5">(Please note that I am NOT located within the main Computer
+                                Science Department site)!<br/></p>
+
+                            <div class="paragraph Body">
+                                <div><img
+                                        src="imgs/map.png" alt=""
+                                        style="border: none; height: 460px; width: auto; "/></div>
+                                <br/></div>
+                            <p style="padding-bottom: 0pt; " class="paragraph_style_3">Image from from Google</p>
+                        </div>
+                        <div style="clear: both; height: 0px; line-height: 0px; " class="tinyText"></div>
+                    </div>
+                </div>
+
+
+                <!--    END OF CONTENT -->
+            </div>
+            <script src='jstemplate/postbody.js'></script>
+        </div>
+    </div>
+</body>
+</html>

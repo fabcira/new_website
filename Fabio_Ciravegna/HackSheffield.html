@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content=''>
+    <meta name='author' content=''>
+
+    <title> HackSheffield Data </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href='css/bootstrap.css' rel='stylesheet'>
+
+    <!-- Documentation extras -->
+    <link href='css/docs.css' rel='stylesheet'>
+    <link href='css/pygments-manni.css' rel='stylesheet'>
+    <script src='js/jquery.js'></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src='js/html5shiv.js'></script>
+    <script src='js/respond.min.js'></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+
+    <!-- Place anything custom after this. -->
+</head>
+<body style='background: rgb(0, 0, 0); margin: 0pt;'>
+    <!--navigation menu-->
+    <script type='text/javascript' src='jstemplate/navigation.js'></script>
+    <script src='jstemplate/prebody.js'></script>
+
+    <div class='panel panel-default' >
+        <div class='page-header' style="margin:3pt"><h1>Hack Sheffield Mobility Data</h1></div>
+
+        <div id='cotf' style='background: rgb(255, 255, 255);'>
+
+            <!--    START OF CONTENT -->
+            <div id='sd' class="col-lg-12" style='background: rgb(255, 255, 255);'>
+
+                The data provided describes the anonymised traces of 250 days of activity recongised by an activity sensor.<br/>
+                This type of sensor recognised WALKING, RUNNING, IN_VEHICLE, ON_BYCICLE, STILL, UNKNOWN as human activities using an accelerometer.
+                The data is highly noisy: sometimes activities are misrecognised (e.g. cycling for 20 seconds is unreasonable) and sometimes the GPS either does not work at all (returning no location) or it misbehaves (distance travelled = 4000km)
+                <br/>
+                <img width="50%" src="data.jpg"><br/>
+                The data provided includes:
+                <ul>
+
+                        <li>activity id</li>
+                        <li>activity
+                        <ul>
+                            <li>IN_VEHICLE</li>
+                            <li>ON_BICYCLE</li>
+                            <li>ON_FOOT</li>
+                            <li>STILL</li>
+                            <li>UNKNOWN </li><li>TILTING</li><li>WALKING </li><li>RUNNING </li>
+                        </ul>
+                        </li>
+                        <li>Time in msecs from 1.1.1970</li>
+                        <li>duration in seconds</li>
+                        <li>number of steps so far in the day</li>
+                        <li>distance travelled</li>
+                        <li>speed</li>
+                        <li>bearing</li>
+                </ul>
+
+                <br/> THE DATA IS PROPERTY OF THE UNIVERSITY OF SHEFFIELD
+                <br/>
+                Although the data is anonymised, still it concerns personal details of people's activities and therefore it is deemed confidential.
+                <br/>The data is distributed for the only purpose of allowing experiments and tests during the <a href="https://hacksheffield.co/">HackSheffield</a> event.
+                Therefore <b>only participants in the event above are allowed to download the data</b>.
+                Moreover anybody downloading the data is required to:
+                <ul>
+                    <li>to keep the data confidential</li>
+                    <li>to destroy any copy after the end of the Hack Sheffield event</li>
+                    <li>not to distribute it in any form to other parties</li>
+                    <li>to process and manage the data only for the purpose of the event above</li>
+                    <li>not to try to track or trace or identify any person who has provided the data or their location</li>
+                </ul>
+                <br/>By downloading the data you agree to the conditions above.<br/>
+
+                <br/><a href="hackdata.csv">I agree: give me the data</a>
+                <br/>
+
+
+
+            </div>
+
+
+            <!--    END OF CONTENT -->
+        </div>
+
+
+    </div>
+<script src='jstemplate/postbody.js'></script>
+
+</body>
+</html>
