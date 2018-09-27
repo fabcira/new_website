@@ -1,6 +1,6 @@
 document.write("<!-- Collect the nav links, forms, and other content for toggling -->");
 
-document.write('<nav class="navbar navbar-inverse navbar-default">');
+document.write('<nav class="navbar  navbar-default">');
 document.write('<div class="container-fluid">');
 document.write('  <div class="navbar-header">');
 document.write('     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">');
@@ -12,7 +12,7 @@ document.write('    </button>');
 document.write('  </div>');
 document.write('  <div class="collapse navbar-collapse" id="navbar-main">');
 
-document.write("    <ul class='nav navbar-nav'>");
+document.write("    <ul class='nav navbar-nav' style='width: 100%'>");
 document.write("        <li ><a href='index.html'>Home</a></li>");
 //document.write("        <li><a href='Research.html'>Research</a></li>");
 document.write("         <li><a href='#' class='dropdown-toggle' data-toggle='dropdown'>About Me<b class='caret'></b></a>");

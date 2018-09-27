@@ -34,7 +34,7 @@
 body {
   position: relative; /* For scrollyspy */
   padding-top: 10px; /* Account for fixed navbar */
-  background: rgb(7, 7, 7);
+  background: #ffffff;
   margin: 0pt;
 }
 
