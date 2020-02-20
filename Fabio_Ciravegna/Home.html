@@ -7,20 +7,7 @@
     <meta name='description' content=''>
     <meta name='author' content=''>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="imgs/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="imgs/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicons/favicon-16x16.png">
-    <link rel="manifest" href="imgs/favicons/manifest.json">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -45,37 +32,63 @@
 
     <!-- Place anything custom after this. -->
 </head>
-<body style='margin: 3pt;'>
-<div >
+<body>
+<div>
     <!--navigation menu-->
     <script type='text/javascript' src='jstemplate/navigation.js'></script>
     <script src='jstemplate/prebody.js'></script>
 
     <div class='panel panel-default' style='padding: 0px 30px 0px 30px'>
-        <div class='page-header'><h1>Prof Fabio Ciravegna</h1></div>
 
         <div id='cotf' style='background: rgb(255, 255, 255); padding:0px 0px 0px 0px;'>
 
             <!--    START OF CONTENT -->
 
             <!--<div  style="text-align: right" >Breaking News: We have an <a onclick="window.open(this.href); return false;"-->
-                                 <!--title="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/VAWeSenseItSFD.pdf"-->
-                                 <!--href="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/VAWeSenseItSFD.pdf"-->
-                                 <!--onkeypress="window.open(this.href); return false;">available PhD-->
-                    <!--studentship </a>  to work on the <a href="http://www.wesenseit.eu/">WeSenseIt Project</a><br/>.-->
-            <div style='text-align:center'>
-                <img width='100%' src="./imgs/fabioMain.jpg" alt="fabio's picture">
+            <!--title="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/VAWeSenseItSFD.pdf"-->
+            <!--href="http://staffwww.dcs.shef.ac.uk/people/F.Ciravegna/VAWeSenseItSFD.pdf"-->
+            <!--onkeypress="window.open(this.href); return false;">available PhD-->
+            <!--studentship </a>  to work on the <a href="http://www.wesenseit.eu/">WeSenseIt Project</a><br/>.-->
+            <div class="container">
 
+                <div style='text-align:center'>
+                    <picture>
+                        <source
+                                media="(min-width: 650px)"
+                                srcset="./imgs/fabioMain.jpg"
+                                sizes="(max-width: 100%)">
+                        <source
+                                media="(min-width: 465px)"
+                                srcset="./imgs/fabioMainMob.png">
+                        <source
+                                media="(orientation: portrait)"
+                                srcset="./imgs/fabioMainMob.png">
+                        <img src="./imgs/fabioMain.jpg" style="width: 100%"
+                             alt="fabio's picture">
+                    </picture>
+                    <!--<img width='100%' src="./imgs/fabioMain.jpg" alt="fabio's picture">-->
 
-                <div style='text-align:center'> I am Professor of Language and Knowledge Technologies at the <a href="http://www.sheffield.ac.uk/dcs">Department of Computer Science </a> of <a href="http://www.shef.ac.uk">The University
-                    of
-                    Sheffield, UK </a>.
-                </div>
+                    <div class="bottom-left">
+                        <div style="font-size: calc(1em + 1vw);">Prof. Fabio Ciravegna</div>
+
+                        Professor of Pervasive Technologies<br/>
+                        <!-- </br>-->
+                        in the <a
+                            href="http://www.sheffield.ac.uk/dcs">Department of Computer Science </a>
+
+                        <br/>of <a
+                            href="http://www.shef.ac.uk">The University
+                        of
+                        Sheffield, UK </a><br/>
+
+                    </div>
 
                     <!--    END OF CONTENT -->
+                </div>
+                <script src='jstemplate/postbody.js'></script>
             </div>
-            <script src='jstemplate/postbody.js'></script>
         </div>
     </div>
+</div>
 </body>
 </html>
