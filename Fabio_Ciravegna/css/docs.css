@@ -1078,8 +1078,7 @@ h1[id] {
   border-color: rgba(82,168,236,.8);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
-  -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
-       box-shadow: 0 0 8px rgba(82,168,236,.6);
+
 }
 
 /* Better spacing on download options in getting started */
@@ -1101,8 +1100,6 @@ h1[id] {
   position: absolute;
   bottom: 40%;
   left: 20%;
-  width: 35%;
-  height: 17%;
   valign: middle;
   font-size: calc(1.2vw);
   color: #ffffff;
