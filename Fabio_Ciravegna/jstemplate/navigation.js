@@ -28,7 +28,7 @@ document.write("                <li><a href='Research.html'>Research Area</a></l
 document.write("                <li><a href='Papers.html'>Publications</a></li>");
 document.write("                <li><a href='Projects.html'>Projects</a></li>");
 // document.write("                <li><a href='Talks.html'>Talks and Tutorials</a></li>");
-// document.write("                <li><a href='Videos.html'>Some Videos of Talks and Tutorials</a></li>");
+document.write("                <li><a href='Videos.html'>Some Videos of Talks and Tutorials</a></li>");
 document.write("            </ul>");
 document.write("        </li>");
 document.write("        <li><a href='Industry.html'>Industry</a></li>");
